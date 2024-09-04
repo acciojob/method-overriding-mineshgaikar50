@@ -1,9 +1,15 @@
 package com.driver;
 
 
-class B extends A {
+class A {
+    String meth() {
+        return "Invoking method from class A";
+    }
+}
 
-    public static String meth() {
+class B extends A {
+    @Override
+    String meth() {
         return "Method is overridden in Extended class B";
     }
 }
@@ -11,8 +17,8 @@ public class Main {
     public static void main(String[] args) {
         
         B bObject = new B();
-        System.out.println(bObject.meth());
-
+        System.out.println(bObject.meth());  
+       
     }
   
 }
