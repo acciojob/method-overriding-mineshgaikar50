@@ -15,12 +15,12 @@ class B extends A {
 }
 public class Main {
     public static void main(String[] args) {
-        // Task 3: Call the method from class A using an object of class B
+        
         B bObject = new B();
-        System.out.println(bObject.meth()); // Output: Invoking method from class A
+        System.out.println(bObject.meth()); 
 
-        // Task 5: Call the overridden method from class B
-        System.out.println(bObject.meth()); // Output: Method is overridden in Extended class B
+  
+        System.out.println(bObject.meth()); 
     }
   
 }
